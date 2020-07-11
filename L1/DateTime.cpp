@@ -1,5 +1,4 @@
 #define _CRT_SECURE_NO_WARNINGS
-#define ll long long
 
 #include <stdio.h>
 #include <limits.h>
@@ -37,7 +36,7 @@ DateTime::DateTime(DateTime *clone) {
 	this->time = clone->time;
 }
 
-DateTime::DateTime(ll time) {
+DateTime::DateTime(long long time) {
 	this->time = time;
 }
 
@@ -46,7 +45,7 @@ DateTime& DateTime::Now() {
 	return *this;
 }
 
-bool DateTime::IsCorrect(ll time) {
+bool DateTime::IsCorrect(long long time) {
 	return time >= 0;
 }
 

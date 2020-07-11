@@ -1,5 +1,4 @@
 #define _CRT_SECURE_NO_WARNINGS
-#define ll long long
 
 #include <stdio.h>
 #include <limits.h>
@@ -31,8 +30,8 @@
 
 using namespace std;
 
-ll Fact(int n) {
-	ll res = 1;
+long long Fact(int n) {
+	long long res = 1;
 
 	for (int i = 2; i < 100000000 * n; i++) {
 		if (res == 0)

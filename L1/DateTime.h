@@ -2,8 +2,6 @@
 
 #include<string>
 
-#define ll long long
-
 using namespace std;
 
 struct Date {
@@ -20,28 +18,28 @@ struct Time {
 
 class DateTime {
 private:
-	ll time;
+	long long time;
 public:
 	DateTime();
 	DateTime(DateTime* clone);
-	DateTime(ll value);
+	DateTime(long long value);
 
-	inline ll GetTime();
-	inline ll SetTime(ll value);
+	inline long long GetTime();
+	inline long long SetTime(long long value);
 
 	DateTime& Now();
 	string Format(string format);
 	void Fprint(string format);
 
-	static bool IsCorrect(ll value);
+	static bool IsCorrect(long long value);
 	static DateTime Parse(string text, string format);
 };
 
-inline ll DateTime::GetTime() {
+inline long long DateTime::GetTime() {
 	return time;
 }
 
-inline ll DateTime::SetTime(ll value) {
+inline long long DateTime::SetTime(long long value) {
 	time = value;
 	return time;
 }
